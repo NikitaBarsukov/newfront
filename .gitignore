@@ -38,5 +38,3 @@ build
 # json-server db
 db.json
 
-# vscode
-.vscode
