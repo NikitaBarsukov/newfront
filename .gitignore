@@ -33,11 +33,10 @@ build
 .idea
 
 # VSCode metadata
-.code-workspace
+Newfront.code-workspace
 
 # Mac files
 .DS_Store
 
 # json-server db
 db.json
-

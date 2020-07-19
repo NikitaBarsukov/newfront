@@ -6,6 +6,8 @@ render() {
     return (
         <div>
             <iframe title="myhtml" id="graph" src="graph" width="700" height="500" scrolling="yes" ></iframe>
+            <br></br>
+            
         </div>
     );
   }
