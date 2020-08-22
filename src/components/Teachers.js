@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Logs extends React.Component{
+class Teacher extends React.Component{
 render() {
     return (
         <div>
@@ -10,4 +10,4 @@ render() {
   }
 }
 
-export default Logs;
+export default Teacher;

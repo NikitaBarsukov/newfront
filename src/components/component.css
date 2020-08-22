@@ -1,4 +1,36 @@
 h1 {
+	font-size: xx-large;
+  }
+h2{
 	font-size: x-large;
+}
+p {
+	font-size: larger;
+	text-align : left; 
+	margin : 20px;
+}
+
+  .logo {
+	width: 120px;
+	height: 32px;
+	margin: auto;
+	float: left;
+  }
+  .site-layout .site-layout-background {
+	background: #fff;
+  }
+  .center-text{
+	text-align:center;
+	margin : 50px
+  }
+  .quote {
+	margin: 0;
+	background: #eee;
+	padding: 1em;
+	border-radius: 1em;
+  }
+  .quote blockquote {
+	margin: 1em;
+	text-align: center;
   }
   
