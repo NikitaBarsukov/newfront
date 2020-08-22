@@ -49,14 +49,14 @@ const Home = () => (
           </p>
         </Col> 
       </Row>
-      <figure class="quote">
+      <figure className="quote">
         <blockquote>
           <h2>
           You will speak English from the first lesson even if you are a beginer.
           </h2>
         </blockquote>
         </figure>      
-      <h1 class="center-text">Our Teachers</h1>
+      <h1 className="center-text">Our Teachers</h1>
       <h3 margin="10px" text-align="center">Our teachers design individual lessons depending on Y O U R needs.</h3>
     </div>
   </div>

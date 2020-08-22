@@ -19,7 +19,7 @@ class Mymenu extends React.Component{
 	render() {
 		return (
 		<Layout>
-			<Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+			<Header style={{ position: 'fixed',theme: 'light', zIndex: 1, width: '100%' }}>
 				<div className="logo">
 				<a href="/">
 					<img src={logooo} alt="Logo" width="100%" />
