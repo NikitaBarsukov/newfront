@@ -1,7 +1,6 @@
 import React from 'react'
-import './component.css';
-import { Link } from "react-router-dom";
-import { Breadcrumb, Carousel, Divider, Row, Col } from 'antd';
+import './styles/component.css'
+import { Breadcrumb, Carousel, Divider, Row, Col } from 'antd'
 import pic1 from "./img/GHPicture1.jpg"
 import pic2 from "./img/GHPicture2.jpg"
 import pic3 from "./img/GHPicture3.jpg"
@@ -25,7 +24,7 @@ const Home = () => (
           <img src={pic3} alt ="pic1" width="100%" height="auto" />
         </div>
       </Carousel>
-      <div className="center-text">
+      <div className="center-text" style={{margin : 50}}>
         <h1>Global Horizons gives you a possibility to learn English Online</h1>
       </div>
       <Divider />
@@ -56,8 +55,6 @@ const Home = () => (
           </h2>
         </blockquote>
         </figure>      
-      <h1 className="center-text">Our Teachers</h1>
-      <h3 margin="10px" text-align="center">Our teachers design individual lessons depending on Y O U R needs.</h3>
     </div>
   </div>
 );

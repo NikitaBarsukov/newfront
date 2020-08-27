@@ -12,7 +12,7 @@ p {
 img {
 	width: 100%;
 	height: auto;
-  }
+}
   .logo {
 	width: 120px;
 	height: 32px;
@@ -22,9 +22,9 @@ img {
   .site-layout .site-layout-background {
 	background: #fff;
   }
-  .center-text{
-	text-align:center;
-	margin : 50px
+  .center-text {
+	text-align : center;
+	margin : 50px;
   }
   .quote {
 	margin: 0;

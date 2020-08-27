@@ -1,11 +1,21 @@
 import React from 'react'
+import './styles/info.css'
+import { Breadcrumb } from 'antd'
+import { NavLink } from 'react-router-dom'
 
-class Specifications extends React.Component{
-  render() {
-    return (
-      <h2>Prices</h2>
-    );
-  }
-}
+const Prices = () => (
+	<div>
+		<Breadcrumb style={{ margin: '16px 0' }}>
+      		<Breadcrumb.Item>Global Horizons</Breadcrumb.Item>
+      		<Breadcrumb.Item>
+        		<NavLink to="/" className="nav-text">Home</NavLink>
+      		</Breadcrumb.Item>
+      		<Breadcrumb.Item>Prices</Breadcrumb.Item>
+    	</Breadcrumb>
+		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
+      		<h1 className="center-text">Prices</h1>
+    	</div>
+  	</div>
+);
 
-export default Specifications;
+export default Prices;

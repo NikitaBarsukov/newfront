@@ -1,16 +1,21 @@
-import React from 'react'
+import React from 'react';
 import 'antd/dist/antd.css';
-import './component.css'
-import './static/style'
+import './styles/component.css';
+import './styles/footer.css';
 import logooo from './img/GHLogo.png';
 import { Layout, Menu, Row, Col } from 'antd';
+import {InstagramOutlined}  from '@ant-design/icons';
 import Home from './Home.js';
 import Teachers from './Teachers.js';
 import Contacts from './Contacts.js';
 import Prices from './Prices.js';
-import Userguide from './Userguide';
-import Tech_specifications from './Prices';
-import Footer from './Footer';
+import General from './General';
+import Business from './Business';
+import Specific from './Specific';
+import Exam from './Exam';
+import Family from './Family';
+import Academic from './Academic';
+import Adult from './Adult';
 import { Route, NavLink, Switch } from 'react-router-dom';
 
 
@@ -82,8 +87,17 @@ class Mymenu extends React.Component{
 						<Route path='/teachers' component={Teachers} />
 						<Route path='/contacts' component={Contacts} />
 						<Route path='/prices' component={Prices} />
-						<Route path='/userguide' component={Userguide} />
-						<Route path='/tech_specifications' component={Tech_specifications} />
+						<Route path='/specific' component={Specific} />
+						<Route path='/business' component={Business} />
+						<Route path='/general' component={General} />
+						<Route path='/exam' component={Exam} />
+						<Route path='/family' component={Family} />
+						<Route path='/academic' component={Academic} />
+						<Route path='/adult' component={Adult} />
+						<Route path='/kids' component={Business} />
+						<Route path='/primary' component={Business} />
+						<Route path='/secondary' component={Business} />
+						<Route path='/secondary_plus' component={Business} />
 					</Switch>
 			</Content>
 			<Footer id="footer" className="dark">
@@ -91,8 +105,8 @@ class Mymenu extends React.Component{
         			<Row>
          				<Col lg={8} sm={24} xs={24}>
            					<div className="footer-center">
-              					<h2>Global Horizons</h2>
-								<h3>Online school of English</h3>
+              					<h2 className="text">Global Horizons</h2>
+								<h3 className="text">Online school of English</h3>
             					<div>
 									<NavLink to="/adult" className="nav-text">Adult Courses</NavLink>	
               					</div>
@@ -109,15 +123,20 @@ class Mymenu extends React.Component{
           				</Col>
           				<Col lg={8} sm={24} xs={24}>
            					<div className="footer-center">
-              					<h2>Contact information</h2>
+              					<h2 className="text">Contact information</h2>
               					<div>
-
+								  <a href = "mailto: info.globalhorizons@gmail.com">info.globalhorizons@gmail.com</a>
             					</div>
+								<div className="social">
+									<a href="https://www.instagram.com/global.horizons/" target="_blank" rel="noopener noreferrer">
+										<InstagramOutlined />
+									</a>
+								</div>
 							</div>	
           				</Col>
 						<Col lg={8} sm={24} xs={24}>
             				<div className="footer-center">
-            					<div className="logo">
+            					<div className="title-icon">
 									<a href="/">
 										<img src={logooo} alt="Logo" width="100%" />
 									</a>	
@@ -126,37 +145,16 @@ class Mymenu extends React.Component{
           				</Col>
        				</Row>
       			</div>
-      <Row className="bottom-bar">
-        <Col lg={4} sm={24} />
-        <Col lg={20} sm={24}>
-          <span
-            style={{
-              lineHeight: '16px', paddingRight: 12, marginRight: 11, borderRight: '1px solid rgba(255, 255, 255, 0.55)',
-            }}
-          >
-            <a
-              href="https://docs.alipay.com/policies/privacy/antfin"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              隐私权政策
-            </a>
-          </span>
-          <span style={{ marginRight: 24 }}>
-            <a
-              href="https://render.alipay.com/p/f/fd-izto3cem/index.html"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              权益保障承诺书
-            </a>
-          </span>
-          <span style={{ marginRight: 12 }}>ICP 证浙 B2-2-100257</span>
-          <span style={{ marginRight: 12 }}>Copyright © 蚂蚁金融服务集团</span>
-        </Col>
-      </Row>
-    </Footer>
-		  </Layout>
+				<Row className="bottom-bar">
+					<Col lg={2} sm={24} />
+						<Col lg={20} sm={24}>
+							<span style={{ marginRight: 12 }}>Global Horizons</span>
+							<span style={{ marginRight: 12 }}>Copyright © </span>
+						</Col>
+					<Col lg={2} sm={24} />
+				</Row>
+			</Footer>
+		</Layout>
 		);
 	}
 }

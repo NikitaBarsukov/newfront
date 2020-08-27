@@ -1,0 +1,52 @@
+footer.dark {
+	background-color: rgb(0, 80, 122);
+	color: rgba(255, 255, 255, 0.65);
+}
+a {
+	color: rgba(255, 255, 255, 0.9);
+}
+.text{
+	color: rgba(255, 255, 255, 1);
+	font-size: 20px;
+	margin: 0 auto 20px;
+	font-weight: 500;
+	position: relative;
+}
+.bottom-bar {
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	overflow: hidden;
+}
+
+.footer-wrap {
+	position: relative;
+	padding: 30px 120px 30px 120px;
+  }
+
+.ant-row {
+	text-align: center;
+}
+
+.footer-center {
+	display: inline-block;
+	text-align: left;
+}
+.social {
+	font-size: xx-large;
+	text-align: center;
+}
+
+footer {
+	border-top: 1px solid rgba(229, 231, 235, 100);;
+	clear: both;
+	font-size: 14px;
+	background: #fff;
+	position: relative;
+	z-index: 100;
+	color: #314659;
+	box-shadow: 0 1000px 0 1000px #fff;
+}
+
+.title-icon {
+	width: 100%;
+	margin-right: 16px;
+}
