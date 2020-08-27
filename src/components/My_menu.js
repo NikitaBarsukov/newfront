@@ -34,7 +34,7 @@ class Mymenu extends React.Component{
 				</a>	
 				</div>
 				<Menu theme="light" mode="horizontal" defaultSelectedKeys={['1']}>
-				<SubMenu  title="Adult courses">
+				<SubMenu  title="Adult courses" >
             				<Menu.Item key="setting:1">
 								<NavLink to="/general" className="nav-text">General English</NavLink>
 							</Menu.Item>
