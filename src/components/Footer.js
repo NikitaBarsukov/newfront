@@ -1,13 +1,13 @@
 import React from 'react'
 
-class Analyser extends React.Component{
+class Footer extends React.Component{
 render() {
     return (
         <div>
-          <h2>Analyser</h2>
+          <h2>Footer</h2>
         </div>
     );
   }
 }
 
-export default Analyser;
+export default Footer;
