@@ -27,61 +27,60 @@ class Mymenu extends React.Component{
 	render() {
 		return (
 		<Layout>
-			<Header style={{ position: 'fixed',theme: 'light', zIndex: 1, width: '100%' }}>
+			<Header className="site-layout-background" style={{ background: '#ffffff', position: 'fixed',theme: 'light', zIndex: 1, width: '100%' }}>
 				<div className="logo">
-				<a href="/">
-					<img src={logooo} alt="Logo" width="100%" />
-				</a>	
+					<a href="/">
+						<img src={logooo} alt="Logo" width="100%" />
+					</a>	
 				</div>
 				<Menu theme="light" mode="horizontal" defaultSelectedKeys={['1']}>
-				<SubMenu  title="Adult courses" >
-            				<Menu.Item key="setting:1">
-								<NavLink to="/general" className="nav-text">General English</NavLink>
-							</Menu.Item>
-            				<Menu.Item key="setting:2">
-								<NavLink to="/business" className="nav-text">Business English</NavLink>
-							</Menu.Item>
-							<Menu.Item key="setting:3">
-								<NavLink to="/specific" className="nav-text">English for Specific Purposes</NavLink>
-							</Menu.Item>
-							<Menu.Item key="setting:4">
-								<NavLink to="/exam" className="nav-text">Exam preparation</NavLink>
-							</Menu.Item>
-							<Menu.Item key="setting:5">
-								<NavLink to="/family" className="nav-text">Family English</NavLink>
+					<SubMenu  title="Adult courses" >
+								<Menu.Item key="setting:1">
+									<NavLink to="/general" className="nav-text">General English</NavLink>
 								</Menu.Item>
-							<Menu.Item key="setting:6">
-								<NavLink to="/academic" className="nav-text">Academic English</NavLink>
-							</Menu.Item>
-					</SubMenu>
-					<SubMenu  title="Junior courses">
-            				<Menu.Item key="setting:7">
-								<NavLink to="/kids" className="nav-text">Kids (from 3 to 5)</NavLink>
-							</Menu.Item>
-							<Menu.Item key="setting:8">
-								<NavLink to="/primary" className="nav-text">Primary (from 6 to 9)</NavLink>
-							</Menu.Item>
-            				<Menu.Item key="setting:9">
-								<NavLink to="/secondary" className="nav-text">Secondary (from 10 to 12)</NavLink>
-							</Menu.Item>
-							<Menu.Item key="setting:10">
-								<NavLink to="/secondary_plus" className="nav-text">Secondary Plus (from 13 to 17)</NavLink>
-							</Menu.Item>
-					</SubMenu>
-					<Menu.Item key = "2">
-						<NavLink to="/prices" className="nav-text">Prices</NavLink>
-					</Menu.Item>
-					<Menu.Item key = "3">
-						<NavLink to="/teachers" className="nav-text">Teachers</NavLink>
-					</Menu.Item>
+								<Menu.Item key="setting:2">
+									<NavLink to="/business" className="nav-text">Business English</NavLink>
+								</Menu.Item>
+								<Menu.Item key="setting:3">
+									<NavLink to="/specific" className="nav-text">English for Specific Purposes</NavLink>
+								</Menu.Item>
+								<Menu.Item key="setting:4">
+									<NavLink to="/exam" className="nav-text">Exam preparation</NavLink>
+								</Menu.Item>
+								<Menu.Item key="setting:5">
+									<NavLink to="/family" className="nav-text">Family English</NavLink>
+									</Menu.Item>
+								<Menu.Item key="setting:6">
+									<NavLink to="/academic" className="nav-text">Academic English</NavLink>
+								</Menu.Item>
+						</SubMenu>
+						<SubMenu  title="Junior courses">
+								<Menu.Item key="setting:7">
+									<NavLink to="/kids" className="nav-text">Kids (from 3 to 5)</NavLink>
+								</Menu.Item>
+								<Menu.Item key="setting:8">
+									<NavLink to="/primary" className="nav-text">Primary (from 6 to 9)</NavLink>
+								</Menu.Item>
+								<Menu.Item key="setting:9">
+									<NavLink to="/secondary" className="nav-text">Secondary (from 10 to 12)</NavLink>
+								</Menu.Item>
+								<Menu.Item key="setting:10">
+									<NavLink to="/secondary_plus" className="nav-text">Secondary Plus (from 13 to 17)</NavLink>
+								</Menu.Item>
+						</SubMenu>
+						<Menu.Item key = "2">
+							<NavLink to="/prices" className="nav-text">Prices</NavLink>
+						</Menu.Item>
+						<Menu.Item key = "3">
+							<NavLink to="/teachers" className="nav-text">Teachers</NavLink>
+						</Menu.Item>
 
-					<Menu.Item key = "4">
-						<NavLink to="/contacts" className="nav-text">Contacts</NavLink>
-					</Menu.Item>
-        			
+						<Menu.Item key = "4">
+							<NavLink to="/contacts" className="nav-text">Contacts</NavLink>
+						</Menu.Item>
 			  	</Menu>
 			</Header>
-			<Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
+			<Content className="site-layout" style={{ padding: '0 50px', marginTop: 64, marginBottom: 64}}>
 					<Switch>
 						<Route exact path='/' component={Home} />
 						<Route path='/teachers' component={Teachers} />

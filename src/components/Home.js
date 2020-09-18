@@ -63,7 +63,7 @@ const Home = () => (
       <figure className="quote">
         <blockquote>
           <h2>
-          You will speak English from the first lesson even if you are a beginer.
+            You will speak English from the first lesson even if you are a beginer.
           </h2>
         </blockquote>
         </figure>      
