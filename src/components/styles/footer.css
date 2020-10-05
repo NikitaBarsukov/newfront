@@ -8,18 +8,19 @@ a {
 .text{
 	color: rgba(255, 255, 255, 1);
 	font-size: 20px;
-	margin: 0 auto 20px;
+	margin: 0 auto 20px auto;
 	font-weight: 500;
 	position: relative;
 }
 .bottom-bar {
 	border-top: 1px solid rgba(255, 255, 255, 0.25);
 	overflow: hidden;
+	text-align: center;
 }
 
 .footer-wrap {
 	position: relative;
-	padding: 30px 120px 30px 120px;
+	padding: 3% 10% 1% 10%;
   }
 
 .ant-row {

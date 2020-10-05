@@ -80,7 +80,7 @@ class Mymenu extends React.Component{
 						</Menu.Item>
 			  	</Menu>
 			</Header>
-			<Content className="site-layout" style={{ padding: '0 50px', marginTop: 64, marginBottom: 64}}>
+			<Content className="site-layout" style={{ padding: '0 5%', marginTop: 64, marginBottom: 32}}>
 					<Switch>
 						<Route exact path='/' component={Home} />
 						<Route path='/teachers' component={Teachers} />
@@ -145,12 +145,11 @@ class Mymenu extends React.Component{
        				</Row>
       			</div>
 				<Row className="bottom-bar">
-					<Col lg={2} sm={24} />
-						<Col lg={20} sm={24}>
-							<span style={{ marginRight: 12 }}>Global Horizons</span>
-							<span style={{ marginRight: 12 }}>Copyright © </span>
-						</Col>
-					<Col lg={2} sm={24} />
+					<Col lg={7} />
+					<Col lg={10}>
+						<span textAlign>Global Horizons Copyright © </span>
+					</Col>
+					<Col lg={7} />
 				</Row>
 			</Footer>
 		</Layout>
