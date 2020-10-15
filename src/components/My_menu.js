@@ -13,7 +13,6 @@ import General from './General';
 import Business from './Business';
 import Specific from './Specific';
 import Exam from './Exam';
-import Family from './Family';
 import Academic from './Academic';
 import Adult from './Adult';
 import { Route, NavLink, Switch } from 'react-router-dom';
@@ -42,41 +41,32 @@ class Mymenu extends React.Component{
 									<NavLink to="/business" className="nav-text">Business English</NavLink>
 								</Menu.Item>
 								<Menu.Item key="setting:3">
-									<NavLink to="/specific" className="nav-text">English for Specific Purposes</NavLink>
+									<NavLink to="/specific" className="nav-text">Englisch für spezielle Anlässe</NavLink>
 								</Menu.Item>
 								<Menu.Item key="setting:4">
-									<NavLink to="/exam" className="nav-text">Exam preparation</NavLink>
+									<NavLink to="/exam" className="nav-text">Trinity, Cambridge und Sprachzertifikatsprüfungen</NavLink>
 								</Menu.Item>
-								<Menu.Item key="setting:5">
-									<NavLink to="/family" className="nav-text">Family English</NavLink>
-									</Menu.Item>
 								<Menu.Item key="setting:6">
-									<NavLink to="/academic" className="nav-text">Academic English</NavLink>
+									<NavLink to="/academic" className="nav-text">Akademisches English</NavLink>
 								</Menu.Item>
 						</SubMenu>
 						<SubMenu  title="Junior courses">
 								<Menu.Item key="setting:7">
-									<NavLink to="/kids" className="nav-text">Kids (from 3 to 5)</NavLink>
+									<NavLink to="/kids" className="nav-text">Junior von 4 bis 9</NavLink>
 								</Menu.Item>
 								<Menu.Item key="setting:8">
-									<NavLink to="/primary" className="nav-text">Primary (from 6 to 9)</NavLink>
-								</Menu.Item>
-								<Menu.Item key="setting:9">
-									<NavLink to="/secondary" className="nav-text">Secondary (from 10 to 12)</NavLink>
-								</Menu.Item>
-								<Menu.Item key="setting:10">
-									<NavLink to="/secondary_plus" className="nav-text">Secondary Plus (from 13 to 17)</NavLink>
+									<NavLink to="/primary" className="nav-text">Für Jugendliche von 10 bis 16 Jahren</NavLink>
 								</Menu.Item>
 						</SubMenu>
 						<Menu.Item key = "2">
-							<NavLink to="/prices" className="nav-text">Prices</NavLink>
+							<NavLink to="/prices" className="nav-text">Preise</NavLink>
 						</Menu.Item>
 						<Menu.Item key = "3">
-							<NavLink to="/teachers" className="nav-text">Teachers</NavLink>
+							<NavLink to="/teachers" className="nav-text">Unsere Lehrer</NavLink>
 						</Menu.Item>
 
 						<Menu.Item key = "4">
-							<NavLink to="/contacts" className="nav-text">Contacts</NavLink>
+							<NavLink to="/contacts" className="nav-text">Kontakt</NavLink>
 						</Menu.Item>
 			  	</Menu>
 			</Header>
@@ -90,13 +80,10 @@ class Mymenu extends React.Component{
 						<Route path='/business' component={Business} />
 						<Route path='/general' component={General} />
 						<Route path='/exam' component={Exam} />
-						<Route path='/family' component={Family} />
 						<Route path='/academic' component={Academic} />
 						<Route path='/adult' component={Adult} />
 						<Route path='/kids' component={Business} />
 						<Route path='/primary' component={Business} />
-						<Route path='/secondary' component={Business} />
-						<Route path='/secondary_plus' component={Business} />
 					</Switch>
 			</Content>
 			<Footer id="footer" className="dark">

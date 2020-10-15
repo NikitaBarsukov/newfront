@@ -1,7 +1,32 @@
 import React from 'react'
 import './styles/info.css'
-import { Breadcrumb } from 'antd'
+import { Breadcrumb,Table, Row, Col } from 'antd'
 import { NavLink } from 'react-router-dom'
+
+const { Column, ColumnGroup } = Table;
+
+const data = [
+	{
+	  info: 'Duration of a course',
+	  basic: '7 months',
+	  pro: '5 months',
+	},
+	{
+		info: 'Duration of the lesson',
+		basic: '45 minutes',
+		pro: '60 minutes',
+	  },
+	  {
+		info: 'Eduacational levels',
+		basic: 'Pre Intermediate - Advanced',
+		pro: 'Elementary - Advanced',
+	  },
+	  {
+		info: 'Price for the whole course',
+		basic: '20€',
+		pro: '25€',
+	  },
+  ];
 
 const General = () => (
 	<div>
@@ -17,14 +42,21 @@ const General = () => (
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
 			<h1 className="center-text">General English</h1>
-				<p>
-				Our most popular course suits every level of learner. 
-				The courses are designed for students who want to improve their
-				 “Core English Skills” – listening, speaking, reading and writing. 
-				 If you are interested in gaining a good understanding of English for reading, 
-				 conversation or travel, then one of our General English courses will be a right 
-				 choice for you.
-			  	</p>
+			<p>
+			Unser beliebtester Kurs eignet sich für alle Sprachniveaus. Die Kurse richten sich an alle Erwachsenen, die ihre Kernkompetenzen verbessern möchten - Zuhören, Lesen, Schreiben und Sprechen (einschließlich Aussprache). Wenn Sie ein gutes Verständnis von Englisch beim Lesen, Unterhalten oder Reisen erlangen möchten, ist einer unserer allgemeinen Englischkurse die richtige Wahl für Sie.
+Dieses Englischprogramm folgt der gleichen Unterrichtsmethode wie unser Präsenzunterricht, sodass Sie genau im gleichen Tempo lernen können, ohne den Komfort Ihres eigenen Zuhauses zu verlassen.
+			</p>
+			<Row>
+				<Col lg={12}>
+					<Table dataSource={data} bordered>
+						<Column title="Course information" dataIndex="info" key="info" />
+						<ColumnGroup title="Course type">
+							<Column title="Basic" dataIndex="basic" key="basic" />
+							<Column title="Premium" dataIndex="pro" key="pro" />
+						</ColumnGroup>
+					</Table>
+				</Col>
+			</Row>
     	</div>
   	</div>
 );
