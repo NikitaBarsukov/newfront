@@ -28,7 +28,7 @@ const data = [
 	  },
   ];
 
-const Business = () => (
+const Primary = () => (
 	<div>
 		<Breadcrumb style={{ margin: '16px 0' }}>
       		<Breadcrumb.Item>Global Horizons</Breadcrumb.Item>
@@ -36,14 +36,14 @@ const Business = () => (
         		<NavLink to="/" className="nav-text">Home</NavLink>
       		</Breadcrumb.Item>
 			<Breadcrumb.Item>
-        		Adult courses
+        		Junior courses
       		</Breadcrumb.Item>
-      		<Breadcrumb.Item>Business English</Breadcrumb.Item>
+      		<Breadcrumb.Item>Für Jugendliche von 10 bis 16 Jahren</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
-			<h1 className="center-text">Business English</h1>
+			<h1 className="center-text">Für Jugendliche von 10 bis 16 Jahren</h1>
 			<p>
-			Dieser Kurs entwickelt Ihre Englischkenntnisse und Ihr Selbstvertrauen für eine Vielzahl von Geschäftskontexten wie Präsentationen, Besprechungen und Verhandlungen. Der Lehrplan kombiniert praktische Fähigkeiten mit geschäfts- und branchenspezifischer Sprache, die auf Ihre Bedürfnisse angepasst ist. Dieses Programm konzentriert sich darauf, Ihr geschäftsbezogenes Englischvokabular zu entwickeln und Sie auf praktische Situationen vorzubereiten.
+				???
 			</p>
 			<Row>
 				<Col lg={6} />
@@ -62,4 +62,4 @@ const Business = () => (
   	</div>
 );
 
-export default Business;
+export default Primary;

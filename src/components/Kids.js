@@ -28,7 +28,7 @@ const data = [
 	  },
   ];
 
-const Business = () => (
+const Kids = () => (
 	<div>
 		<Breadcrumb style={{ margin: '16px 0' }}>
       		<Breadcrumb.Item>Global Horizons</Breadcrumb.Item>
@@ -36,14 +36,33 @@ const Business = () => (
         		<NavLink to="/" className="nav-text">Home</NavLink>
       		</Breadcrumb.Item>
 			<Breadcrumb.Item>
-        		Adult courses
+        		Junior courses
       		</Breadcrumb.Item>
-      		<Breadcrumb.Item>Business English</Breadcrumb.Item>
+      		<Breadcrumb.Item>Junior von 4 bis 9</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
-			<h1 className="center-text">Business English</h1>
+			<h1 className="center-text">Junior von 4 bis 9</h1>
 			<p>
-			Dieser Kurs entwickelt Ihre Englischkenntnisse und Ihr Selbstvertrauen für eine Vielzahl von Geschäftskontexten wie Präsentationen, Besprechungen und Verhandlungen. Der Lehrplan kombiniert praktische Fähigkeiten mit geschäfts- und branchenspezifischer Sprache, die auf Ihre Bedürfnisse angepasst ist. Dieses Programm konzentriert sich darauf, Ihr geschäftsbezogenes Englischvokabular zu entwickeln und Sie auf praktische Situationen vorzubereiten.
+			Es ist erwiesen, dass die ersten sechs Lebensjahre eines Kindes 
+			für die Entwicklung des Gehirns am wichtigsten sind. Während 
+			dieser Zeit werden alle wichtigen Verbindungen zwischen den 
+			einzelnen Gehirnzellen im Gehirn hergestellt. Die Vielfalt 
+			des Gehirns hängt von der Menge an Informationen ab, 
+			die das Kind erhält. Studien haben gezeigt, 
+			dass sich das Erlernen einer zweiten Sprache in jungen 
+			Jahren positiv auf die Intelligenz auswirkt.
+			<br />
+			<br />
+			Aber auch nach dem sechsten Lebensjahr kann eine zweite 
+			Sprache mühelos und fast Akzent erlernt werden. Die 
+			Fähigkeit, mühelos zu lernen, geht jedoch zu Beginn 
+			der Pubertät - etwa im Alter von 11 Jahren - unwiederbringlich 
+			verloren. Wenn das Kind bereits im Vor- und 
+			Grundschulalter eine zweite Sprache gelernt hat, hilft 
+			es ihm sehr im späteren Leben. Auch im Schulleben 
+			hat es einen großen Vorteil: Das Kind hat bereits umfassendes 
+			Wissen erworben und kann sich auf einfache 
+			und entspannte Weise auf komplexes Lernen vorbereiten.
 			</p>
 			<Row>
 				<Col lg={6} />
@@ -62,4 +81,4 @@ const Business = () => (
   	</div>
 );
 
-export default Business;
+export default Kids;

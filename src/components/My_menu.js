@@ -15,6 +15,8 @@ import Specific from './Specific';
 import Exam from './Exam';
 import Academic from './Academic';
 import Adult from './Adult';
+import Kids from './Kids';
+import Primary from './Primary';
 import { Route, NavLink, Switch } from 'react-router-dom';
 
 
@@ -82,8 +84,8 @@ class Mymenu extends React.Component{
 						<Route path='/exam' component={Exam} />
 						<Route path='/academic' component={Academic} />
 						<Route path='/adult' component={Adult} />
-						<Route path='/kids' component={Business} />
-						<Route path='/primary' component={Business} />
+						<Route path='/kids' component={Kids} />
+						<Route path='/primary' component={Primary} />
 					</Switch>
 			</Content>
 			<Footer id="footer" className="dark">

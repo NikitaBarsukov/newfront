@@ -36,17 +36,26 @@ const General = () => (
         		<NavLink to="/" className="nav-text">Home</NavLink>
       		</Breadcrumb.Item>
 			<Breadcrumb.Item>
-        		<NavLink to="/Adult" className="nav-text">Adult courses</NavLink>
+        		Adult courses
       		</Breadcrumb.Item>
       		<Breadcrumb.Item>General English</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
 			<h1 className="center-text">General English</h1>
 			<p>
-			Unser beliebtester Kurs eignet sich für alle Sprachniveaus. Die Kurse richten sich an alle Erwachsenen, die ihre Kernkompetenzen verbessern möchten - Zuhören, Lesen, Schreiben und Sprechen (einschließlich Aussprache). Wenn Sie ein gutes Verständnis von Englisch beim Lesen, Unterhalten oder Reisen erlangen möchten, ist einer unserer allgemeinen Englischkurse die richtige Wahl für Sie.
-Dieses Englischprogramm folgt der gleichen Unterrichtsmethode wie unser Präsenzunterricht, sodass Sie genau im gleichen Tempo lernen können, ohne den Komfort Ihres eigenen Zuhauses zu verlassen.
+			Unser beliebtester Kurs eignet sich für alle Sprachniveaus. Die Kurse richten 
+			sich an alle Erwachsenen, die ihre Kernkompetenzen verbessern möchten - Zuhören, 
+			Lesen, Schreiben und Sprechen (einschließlich Aussprache). Wenn Sie ein gutes 
+			Verständnis von Englisch beim Lesen, Unterhalten oder Reisen erlangen möchten, 
+			ist einer unserer allgemeinen Englischkurse die richtige Wahl für Sie.
+			<br/>
+			<br/>
+			Dieses Englischprogramm folgt der gleichen Unterrichtsmethode wie unser Präsenzunterricht, 
+			sodass Sie genau im gleichen Tempo lernen können, ohne den Komfort Ihres eigenen 
+			Zuhauses zu verlassen.
 			</p>
 			<Row>
+				<Col lg={6} />
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
 						<Column title="Course information" dataIndex="info" key="info" />
@@ -56,6 +65,7 @@ Dieses Englischprogramm folgt der gleichen Unterrichtsmethode wie unser Präsenz
 						</ColumnGroup>
 					</Table>
 				</Col>
+				<Col lg={6} />
 			</Row>
     	</div>
   	</div>
