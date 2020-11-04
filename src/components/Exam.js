@@ -1,19 +1,40 @@
 import React from 'react'
 import './styles/info.css'
-import { Breadcrumb } from 'antd'
+import { Breadcrumb,Table, Row, Col } from 'antd'
 import { NavLink } from 'react-router-dom'
+
+const { Column } = Table;
+
+const data = [
+	{
+	  info: 'Duration of a course',
+	  basic: '5 months',
+	},
+	{
+		info: 'Duration of the lesson',
+		basic: '60 minutes',
+	  },
+	  {
+		info: 'Eduacational levels',
+		basic: 'Upper Intermediate - Advanced',
+	  },
+	  {
+		info: 'Price for the whole course',
+		basic: '35€',
+	  },
+  ];
 
 const Exam = () => (
 	<div>
 		<Breadcrumb style={{ margin: '16px 0' }}>
       		<Breadcrumb.Item>Global Horizons</Breadcrumb.Item>
       		<Breadcrumb.Item>
-        		<NavLink to="/" className="nav-text">Home</NavLink>
+        		<NavLink to="/" className="nav-text">Startseite</NavLink>
       		</Breadcrumb.Item>
 			<Breadcrumb.Item>
-        		Adult courses
+				Kurse für Erwachsene
       		</Breadcrumb.Item>
-      		<Breadcrumb.Item>Exam preparation</Breadcrumb.Item>
+      		<Breadcrumb.Item>Trinity, Cambridge and Language Certificate Exams</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
       		<h1 className="center-text">Trinity, Cambridge and Language Certificate Exams</h1>
@@ -33,6 +54,16 @@ const Exam = () => (
 			die CAE (Cambridge English Advanced Exam) und die CPE 
 			(Cambridge English Proficiency) bestehen möchten.
 			</p>
+			<Row>
+				<Col lg={6} />
+				<Col lg={12}>
+					<Table dataSource={data} bordered>
+						<Column title="Course information" dataIndex="info" key="info" />
+						<Column title="Trinity, Cambridge and Language Certificate Exams" dataIndex="basic" key="basic" />
+					</Table>
+				</Col>
+				<Col lg={6} />
+			</Row>
     	</div>
   	</div>
 );

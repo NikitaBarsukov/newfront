@@ -8,40 +8,37 @@ const { Column, ColumnGroup } = Table;
 const data = [
 	{
 	  info: 'Duration of a course',
-	  basic: '7 months',
-	  pro: '5 months',
+	  basic: '5 months',
 	},
 	{
 		info: 'Duration of the lesson',
-		basic: '45 minutes',
-		pro: '60 minutes',
+		basic: '60 minutes',
 	  },
 	  {
 		info: 'Eduacational levels',
-		basic: 'Pre Intermediate - Advanced',
-		pro: 'Elementary - Advanced',
+		basic: 'Intermediate - Advanced',
 	  },
 	  {
 		info: 'Price for the whole course',
-		basic: '20€',
-		pro: '25€',
+		basic: '35€',
 	  },
   ];
+
 
 const Academic = () => (
 	<div>
 		<Breadcrumb style={{ margin: '16px 0' }}>
       		<Breadcrumb.Item>Global Horizons</Breadcrumb.Item>
       		<Breadcrumb.Item>
-        		<NavLink to="/" className="nav-text">Home</NavLink>
+        		<NavLink to="/" className="nav-text">Startseite</NavLink>
       		</Breadcrumb.Item>
 			<Breadcrumb.Item>
-        		Adult courses
+				Kurse für Erwachsene
       		</Breadcrumb.Item>
-      		<Breadcrumb.Item>Academic English</Breadcrumb.Item>
+      		<Breadcrumb.Item>Akademisches English</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
-			<h1 className="center-text">Academic English</h1>
+			<h1 className="center-text">Akademisches English</h1>
 			<p>
 			Möchten Sie Zugang zur Bildung Ihrer Träume erhalten? Unser 
 			akademischer Englischkurs bereitet Sie auf den Erfolg in 
@@ -84,10 +81,7 @@ const Academic = () => (
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
 						<Column title="Course information" dataIndex="info" key="info" />
-						<ColumnGroup title="Course type">
-							<Column title="Basic" dataIndex="basic" key="basic" />
-							<Column title="Premium" dataIndex="pro" key="pro" />
-						</ColumnGroup>
+						<Column title="Akademisches English" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>
 				<Col lg={6} />

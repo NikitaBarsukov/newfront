@@ -6,13 +6,14 @@ import pic2 from "./img/GHPicture2.jpg"
 import pic3 from "./img/GHPicture3.jpg"
 import pic4 from "./img/GHPicture4.jpg"
 import pic5 from "./img/GHPicture5.jpg"
-import pic6 from "./img/GHPicture5.jpg"
+import pic6 from "./img/GHPicture6.jpg"
+import pic7 from "./img/GHPicture7.jpg"
 
 const Home = () => (
   <div>
     <Breadcrumb style={{ margin: '16px 0' }}>
       <Breadcrumb.Item>Global Horizons</Breadcrumb.Item>
-      <Breadcrumb.Item>Home</Breadcrumb.Item>
+      <Breadcrumb.Item>Startseite</Breadcrumb.Item>
     </Breadcrumb>
     <div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
       <Carousel autoplay height="300px">
@@ -37,36 +38,80 @@ const Home = () => (
 
       </Carousel>
       <div className="center-text" style={{margin : 50}}>
-        <h1>Global Horizons gives you a possibility to learn English Online</h1>
+        <h1>Global Horizons gibt dir die Möglichkeit Englisch online zu lernen.</h1>
       </div>
       <Divider />
       <Row align="top">
         <Col span={12}>
-          <img src={pic4} alt="pic4" width="100%" />
+          <div className="img">
+            <img src={pic7} alt="pic7"/>
+          </div>
         </Col>
         <Col span={12} >
           <h2 className="center-text" style={{margin :20}}>
-            What approach we use in our language school?
+            Welchen Lehransatz verfolgen wir in unserer Schule?
           </h2>
-          <p >
-            In our school we use communicative approach. It assumes that
-            language acquisition successfully comes through having real
-            communication. Language cannot be learnt through simple
-            memorization. Our main goal is to make you able to communicate
-            in English. The lessons are designed in such a way that encourages
-            the learners to use the target language. We believe that learning
-            must be enjoyable. During the lessons we will have many different
-            activities such as role plays, dramas and games.
+          <p>
+            In unserer Schule nutzen wir die aktive Kommunikation. 
+            <br/>
+            Bei diesem Ansatz wird angenommen, dass der Erwerb einer 
+            Sprache durch den alltäglichen Gebrauch erlernt wird. 
+            Eine Sprache kann nicht ausschließlich durch das monotone 
+            Lernen von Vokabeln erworben werden. Des Weiteren tritt 
+            die Auseinandersetzung mit Sprachbarrieren hierbei zu 
+            weit in den Hintergrund, was trotz des Wortschatzes 
+            oft vom möglichen Gebrauch der Sprache abhält.
+            Unser grundlegendes Ziel ist es, dir die 
+            Möglichkeit zu geben, angemessen in Englisch zu 
+            kommunizieren. 
+            <br/>
+            Die Unterrichtsstunden werden so gestaltet, dass 
+            du zum Gebrauch der Englischen Sprache 
+            ermutigt wirst. Wir glauben, dass das Lernen nicht 
+            nur zweckerfüllend, sondern auch spaßbringend 
+            sein sollte. Während der Unterrichtsstunden werden 
+            wir verschiedene Ansätze wie Rollenspiele, 
+            Filmszenarien und häufige Dialoge anwenden.
           </p>
         </Col> 
       </Row>
       <figure className="quote">
         <blockquote>
           <h2>
-            You will speak English from the first lesson even if you are a beginer.
+            Du wirst von Anfang an Englisch sprechen, auch wenn du noch ein Neuling bist.
           </h2>
         </blockquote>
-        </figure>      
+        </figure>
+        <Divider />
+        <div style={{margin : 20}}>
+        <ul> 
+          <strong>
+            <li>
+            <p>
+              Alle unsere Lehrer haben Abschlüsse in Sprachwissenschaften 
+              oder Zertifikate wie TESOL. Sie verbessern kontinuierlich 
+              ihre Kompetenzen durch Seminare und Webinare.
+            </p>
+            </li>
+            <li>
+            <p>
+              Im Mittelpunkt unseres Lehrvorgangs steht der Erwerb von 
+              täglich benötigen Kommunikationsfähigkeiten.
+            </p>
+            </li>
+            <li>
+            <p>
+              Wir fangen stets mit dem Festlegen von individuellen 
+              und personenabhängigen Zielen an, welche die Umwelt 
+              und den Kenntnisstand des jeweiligen Schülers bestmöglich 
+              in den Lernprozess etablieren. Die Sprache wird im Kontext 
+              von dir bekannten alltäglich Situationen präsentiert 
+              und erlernt, wodurch dir das Lernen zusätzlich noch einfacher gelingt.
+            </p>
+            </li>
+            </strong>
+          </ul>
+      </div>
     </div>
   </div>
 );

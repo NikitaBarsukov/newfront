@@ -10,7 +10,7 @@ const Contacts = () => (
       		<Breadcrumb.Item>
         		<NavLink to="/" className="nav-text">Home</NavLink>
       		</Breadcrumb.Item>
-      		<Breadcrumb.Item>Contacts</Breadcrumb.Item>
+      		<Breadcrumb.Item>Kontakt</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
       		<h1 className="center-text">Contacts</h1>

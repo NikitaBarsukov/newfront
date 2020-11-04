@@ -8,23 +8,19 @@ const { Column, ColumnGroup } = Table;
 const data = [
 	{
 	  info: 'Duration of a course',
-	  basic: '7 months',
-	  pro: '5 months',
+	  basic: '5 months',
 	},
 	{
 		info: 'Duration of the lesson',
 		basic: '45 minutes',
-		pro: '60 minutes',
 	  },
 	  {
 		info: 'Eduacational levels',
-		basic: 'Pre Intermediate - Advanced',
-		pro: 'Elementary - Advanced',
+		basic: 'Elementary - Upper Intermediate',
 	  },
 	  {
 		info: 'Price for the whole course',
 		basic: '20€',
-		pro: '25€',
 	  },
   ];
 
@@ -43,17 +39,29 @@ const Primary = () => (
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
 			<h1 className="center-text">Für Jugendliche von 10 bis 16 Jahren</h1>
 			<p>
-				???
+			Die Anforderungen an Kinder steigen nach der Grundschule erheblich. 
+			Große Klassen und ein straff organisierter Lehrplan lassen dem 
+			Einzelnen in der Sekundarschule nicht viel Raum. Es ist 
+			hauptsächlich theoretisches Wissen, welches in der Schule 
+			vermittelt wird. Wir ein praktisches Konzept entwickelt, 
+			das unsere Kinder in die Lage versetzt, die englische Sprache aktiv, 
+			frei, kreativ und ohne Hemmungen zu verwenden - ähnlich wie unsere 
+			Muttersprache. Neben der Festigung der Grammatik steht das freie 
+			Sprechen in Englisch im Mittelpunkt unserer Kurse. Durch viele 
+			Konversationsspiele werden die Schüler bald in der Lage sein, 
+			instinktiv auf Englisch zu kommunizieren. Die Grammatik wird 
+			ausführlich erklärt und mit vielen Spielen und Übungen 
+			gefestigt. Wir helfen, Lücken im Grundwissen zu schließen, 
+			während die Hemmungen, eine neue Sprache zu sprechen, allmählich 
+			verringert werden. Kommunikation, Zuhören und Verstehen werden mit 
+			viel Spaß und ohne Leistungsdruck erlernt.
 			</p>
 			<Row>
 				<Col lg={6} />
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
 						<Column title="Course information" dataIndex="info" key="info" />
-						<ColumnGroup title="Course type">
-							<Column title="Basic" dataIndex="basic" key="basic" />
-							<Column title="Premium" dataIndex="pro" key="pro" />
-						</ColumnGroup>
+						<Column title="Für Jugendliche von 10 bis 16 Jahren" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>
 				<Col lg={6} />

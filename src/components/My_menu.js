@@ -6,7 +6,6 @@ import logooo from './img/GHLogo.png';
 import { Layout, Menu, Row, Col } from 'antd';
 import {InstagramOutlined}  from '@ant-design/icons';
 import Home from './Home.js';
-import Teachers from './Teachers.js';
 import Contacts from './Contacts.js';
 import Prices from './Prices.js';
 import General from './General';
@@ -63,10 +62,6 @@ class Mymenu extends React.Component{
 						<Menu.Item key = "2">
 							<NavLink to="/prices" className="nav-text">Preise</NavLink>
 						</Menu.Item>
-						<Menu.Item key = "3">
-							<NavLink to="/teachers" className="nav-text">Unsere Lehrer</NavLink>
-						</Menu.Item>
-
 						<Menu.Item key = "4">
 							<NavLink to="/contacts" className="nav-text">Kontakt</NavLink>
 						</Menu.Item>
@@ -75,7 +70,6 @@ class Mymenu extends React.Component{
 			<Content className="site-layout" style={{ padding: '0 5%', marginTop: 64, marginBottom: 32}}>
 					<Switch>
 						<Route exact path='/' component={Home} />
-						<Route path='/teachers' component={Teachers} />
 						<Route path='/contacts' component={Contacts} />
 						<Route path='/prices' component={Prices} />
 						<Route path='/specific' component={Specific} />
@@ -94,7 +88,7 @@ class Mymenu extends React.Component{
          				<Col lg={8} sm={24} xs={24}>
            					<div className="footer-center">
               					<h2 className="text">Global Horizons</h2>
-								<h3 className="text">Online school of English</h3>
+								<h3 className="text">Online-Schule für Englisch</h3>
             					<div>
 									<NavLink to="/adult" className="nav-text">Adult Courses</NavLink>	
               					</div>
@@ -102,16 +96,13 @@ class Mymenu extends React.Component{
 									<NavLink to="/junior" className="nav-text">Junior Courses</NavLink>
 								</div>
 								<div>
-									<NavLink to="/prices" className="nav-text">Prices</NavLink>
-								</div>
-								<div>
-									<NavLink to="/teachers" className="nav-text">Teachers</NavLink>
+									<NavLink to="/prices" className="nav-text">Preise</NavLink>
 								</div>
 							</div>
           				</Col>
           				<Col lg={8} sm={24} xs={24}>
            					<div className="footer-center">
-              					<h2 className="text">Contact information</h2>
+              					<h2 className="text">Kontaktinformation</h2>
               					<div>
 								  <a href = "mailto: info.globalhorizons@gmail.com">info.globalhorizons@gmail.com</a>
             					</div>

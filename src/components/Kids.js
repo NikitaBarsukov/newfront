@@ -8,23 +8,19 @@ const { Column, ColumnGroup } = Table;
 const data = [
 	{
 	  info: 'Duration of a course',
-	  basic: '7 months',
-	  pro: '5 months',
+	  basic: '5 months',
 	},
 	{
 		info: 'Duration of the lesson',
-		basic: '45 minutes',
-		pro: '60 minutes',
+		basic: '25 minutes',
 	  },
 	  {
 		info: 'Eduacational levels',
-		basic: 'Pre Intermediate - Advanced',
-		pro: 'Elementary - Advanced',
+		basic: 'Basic - Intermediate',
 	  },
 	  {
 		info: 'Price for the whole course',
-		basic: '20€',
-		pro: '25€',
+		basic: '15€',
 	  },
   ];
 
@@ -33,7 +29,7 @@ const Kids = () => (
 		<Breadcrumb style={{ margin: '16px 0' }}>
       		<Breadcrumb.Item>Global Horizons</Breadcrumb.Item>
       		<Breadcrumb.Item>
-        		<NavLink to="/" className="nav-text">Home</NavLink>
+        		<NavLink to="/" className="nav-text">Startseite</NavLink>
       		</Breadcrumb.Item>
 			<Breadcrumb.Item>
         		Junior courses
@@ -69,10 +65,7 @@ const Kids = () => (
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
 						<Column title="Course information" dataIndex="info" key="info" />
-						<ColumnGroup title="Course type">
-							<Column title="Basic" dataIndex="basic" key="basic" />
-							<Column title="Premium" dataIndex="pro" key="pro" />
-						</ColumnGroup>
+						<Column title="Junior von 4 bis 9" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>
 				<Col lg={6} />
