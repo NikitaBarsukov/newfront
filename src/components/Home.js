@@ -43,7 +43,7 @@ const Home = () => (
       <Divider />
       <Row align="top">
         <Col span={12}>
-          <div className="img">
+          <div className="image">
             <img src={pic7} alt="pic7"/>
           </div>
         </Col>

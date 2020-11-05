@@ -7,19 +7,19 @@ const { Column } = Table;
 
 const data = [
 	{
-	  info: 'Duration of a course',
-	  basic: '5 months',
+	  info: 'Dauer des Kurses',
+	  basic: '5 Monate',
 	},
 	{
-		info: 'Duration of the lesson',
-		basic: '60 minutes',
+		info: 'Dauer der Unterrichtseinheit',
+		basic: '60 Minuten',
 	  },
 	  {
-		info: 'Eduacational levels',
-		basic: 'Elemantary - Advanced',
+		info: 'Kompetenzniveaus',
+		basic: 'A1 - C1',
 	  },
 	  {
-		info: 'Price for the whole course',
+		info: 'Gesamtpreis des Kurses',
 		basic: '25€',
 	  },
   ];
@@ -34,10 +34,10 @@ const General = () => (
 			<Breadcrumb.Item>
 				Kurse für Erwachsene
       		</Breadcrumb.Item>
-      		<Breadcrumb.Item>General English</Breadcrumb.Item>
+      		<Breadcrumb.Item>Allgemeines Englisch</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
-			<h1 className="center-text">General English</h1>
+			<h1 className="center-text">Allgemeines Englisch</h1>
 			<p>
 			Unser beliebtester Kurs eignet sich für alle Sprachniveaus. Die Kurse richten 
 			sich an alle Erwachsenen, die ihre Kernkompetenzen verbessern möchten - Zuhören, 
@@ -54,8 +54,8 @@ const General = () => (
 				<Col lg={6} />
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
-						<Column title="Course information" dataIndex="info" key="info" />
-						<Column title="General English" dataIndex="basic" key="basic" />
+						<Column title="Kursinformationen" dataIndex="info" key="info" />
+						<Column title="Allgemeines Englisch" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>
 				<Col lg={6} />

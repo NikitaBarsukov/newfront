@@ -34,12 +34,12 @@ class Mymenu extends React.Component{
 					</a>	
 				</div>
 				<Menu theme="light" mode="horizontal" defaultSelectedKeys={['1']}>
-					<SubMenu  title="Adult courses" >
+					<SubMenu  title="Kurse für Erwachsene" >
 								<Menu.Item key="setting:1">
-									<NavLink to="/general" className="nav-text">General English</NavLink>
+									<NavLink to="/general" className="nav-text">Allgemeines Englisch</NavLink>
 								</Menu.Item>
 								<Menu.Item key="setting:2">
-									<NavLink to="/business" className="nav-text">Business English</NavLink>
+									<NavLink to="/business" className="nav-text">Business Englisch</NavLink>
 								</Menu.Item>
 								<Menu.Item key="setting:3">
 									<NavLink to="/specific" className="nav-text">Englisch für spezielle Anlässe</NavLink>
@@ -51,7 +51,7 @@ class Mymenu extends React.Component{
 									<NavLink to="/academic" className="nav-text">Akademisches English</NavLink>
 								</Menu.Item>
 						</SubMenu>
-						<SubMenu  title="Junior courses">
+						<SubMenu  title="Kurse für Kinder">
 								<Menu.Item key="setting:7">
 									<NavLink to="/kids" className="nav-text">Junior von 4 bis 9</NavLink>
 								</Menu.Item>
@@ -88,12 +88,12 @@ class Mymenu extends React.Component{
          				<Col lg={8} sm={24} xs={24}>
            					<div className="footer-center">
               					<h2 className="text">Global Horizons</h2>
-								<h3 className="text">Online-Schule für Englisch</h3>
+								<h3 className="text">Online Schule für Englisch</h3>
             					<div>
 									<NavLink to="/adult" className="nav-text">Adult Courses</NavLink>	
               					</div>
 								<div>
-									<NavLink to="/junior" className="nav-text">Junior Courses</NavLink>
+									<NavLink to="/junior" className="nav-text">Kurse für Kinder</NavLink>
 								</div>
 								<div>
 									<NavLink to="/prices" className="nav-text">Preise</NavLink>
@@ -102,7 +102,7 @@ class Mymenu extends React.Component{
           				</Col>
           				<Col lg={8} sm={24} xs={24}>
            					<div className="footer-center">
-              					<h2 className="text">Kontaktinformation</h2>
+              					<h2 className="text">Kontakt</h2>
               					<div>
 								  <a href = "mailto: info.globalhorizons@gmail.com">info.globalhorizons@gmail.com</a>
             					</div>

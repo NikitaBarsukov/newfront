@@ -7,19 +7,19 @@ const { Column } = Table;
 
 const data = [
 	{
-	  info: 'Duration of a course',
-	  basic: '5 months',
+	  info: 'Dauer des Kurses',
+	  basic: '5 Monate',
 	},
 	{
-		info: 'Duration of the lesson',
-		basic: '60 minutes',
+		info: 'Dauer der Unterrichtseinheit',
+		basic: '60 Minuten',
 	  },
 	  {
-		info: 'Eduacational levels',
-		basic: 'Intermediate - Advanced',
+		info: 'Kompetenzniveaus',
+		basic: 'B1 - C1',
 	  },
 	  {
-		info: 'Price for the whole course',
+		info: 'Gesamtpreis des Kurses',
 		basic: '30€',
 	  },
   ];
@@ -34,10 +34,10 @@ const Business = () => (
 			<Breadcrumb.Item>
 				Kurse für Erwachsene
       		</Breadcrumb.Item>
-      		<Breadcrumb.Item>Business English</Breadcrumb.Item>
+      		<Breadcrumb.Item>Business Englisch</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
-			<h1 className="center-text">Business English</h1>
+			<h1 className="center-text">Business Englisch</h1>
 			<p>
 			Dieser Kurs entwickelt Ihre Englischkenntnisse und Ihr Selbstvertrauen für eine Vielzahl von Geschäftskontexten wie Präsentationen, Besprechungen und Verhandlungen. Der Lehrplan kombiniert praktische Fähigkeiten mit geschäfts- und branchenspezifischer Sprache, die auf Ihre Bedürfnisse angepasst ist. Dieses Programm konzentriert sich darauf, Ihr geschäftsbezogenes Englischvokabular zu entwickeln und Sie auf praktische Situationen vorzubereiten.
 			</p>
@@ -45,8 +45,8 @@ const Business = () => (
 				<Col lg={6} />
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
-						<Column title="Course information" dataIndex="info" key="info" />
-						<Column title="Business English" dataIndex="basic" key="basic" />
+						<Column title="Kursinformationen" dataIndex="info" key="info" />
+						<Column title="Business Englisch" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>
 				<Col lg={6} />

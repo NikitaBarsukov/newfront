@@ -3,23 +3,23 @@ import './styles/info.css'
 import { Breadcrumb,Table, Row, Col } from 'antd'
 import { NavLink } from 'react-router-dom'
 
-const { Column, ColumnGroup } = Table;
+const { Column } = Table;
 
 const data = [
 	{
-	  info: 'Duration of a course',
-	  basic: '5 months',
+	  info: 'Dauer des Kurses',
+	  basic: '5 Monate',
 	},
 	{
-		info: 'Duration of the lesson',
-		basic: '45 minutes',
+		info: 'Dauer der Unterrichtseinheit',
+		basic: '45 Minuten',
 	  },
 	  {
-		info: 'Eduacational levels',
-		basic: 'Elementary - Upper Intermediate',
+		info: 'Kompetenzniveaus',
+		basic: 'A1 - B1',
 	  },
 	  {
-		info: 'Price for the whole course',
+		info: 'Gesamtpreis des Kurses',
 		basic: '20€',
 	  },
   ];
@@ -29,10 +29,10 @@ const Primary = () => (
 		<Breadcrumb style={{ margin: '16px 0' }}>
       		<Breadcrumb.Item>Global Horizons</Breadcrumb.Item>
       		<Breadcrumb.Item>
-        		<NavLink to="/" className="nav-text">Home</NavLink>
+        		<NavLink to="/" className="nav-text">Startseite</NavLink>
       		</Breadcrumb.Item>
 			<Breadcrumb.Item>
-        		Junior courses
+        		Kurse für Kinder
       		</Breadcrumb.Item>
       		<Breadcrumb.Item>Für Jugendliche von 10 bis 16 Jahren</Breadcrumb.Item>
     	</Breadcrumb>
@@ -60,7 +60,7 @@ const Primary = () => (
 				<Col lg={6} />
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
-						<Column title="Course information" dataIndex="info" key="info" />
+						<Column title="Kursinformationen" dataIndex="info" key="info" />
 						<Column title="Für Jugendliche von 10 bis 16 Jahren" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>

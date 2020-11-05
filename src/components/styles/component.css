@@ -15,6 +15,12 @@ img {
 	padding: auto;
 	margin: auto;
 }
+.image{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	margin: 20px;
+}
   .logo {
 	width: 120px;
 	height: 32px;

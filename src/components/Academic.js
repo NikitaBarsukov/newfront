@@ -3,23 +3,23 @@ import './styles/info.css'
 import { Breadcrumb,Table, Row, Col } from 'antd'
 import { NavLink } from 'react-router-dom'
 
-const { Column, ColumnGroup } = Table;
+const { Column } = Table;
 
 const data = [
 	{
-	  info: 'Duration of a course',
-	  basic: '5 months',
+	  info: 'Dauer des Kurses',
+	  basic: '5 Monate',
 	},
 	{
-		info: 'Duration of the lesson',
-		basic: '60 minutes',
+		info: 'Dauer der Unterrichtseinheit',
+		basic: '60 Minuten',
 	  },
 	  {
-		info: 'Eduacational levels',
-		basic: 'Intermediate - Advanced',
+		info: 'Kompetenzniveaus',
+		basic: 'B1 - C1',
 	  },
 	  {
-		info: 'Price for the whole course',
+		info: 'Gesamtpreis des Kurses',
 		basic: '35€',
 	  },
   ];
@@ -35,10 +35,10 @@ const Academic = () => (
 			<Breadcrumb.Item>
 				Kurse für Erwachsene
       		</Breadcrumb.Item>
-      		<Breadcrumb.Item>Akademisches English</Breadcrumb.Item>
+      		<Breadcrumb.Item>Akademisches Englisch</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
-			<h1 className="center-text">Akademisches English</h1>
+			<h1 className="center-text">Akademisches Englisch</h1>
 			<p>
 			Möchten Sie Zugang zur Bildung Ihrer Träume erhalten? Unser 
 			akademischer Englischkurs bereitet Sie auf den Erfolg in 
@@ -80,8 +80,8 @@ const Academic = () => (
 			<Col lg={6} />
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
-						<Column title="Course information" dataIndex="info" key="info" />
-						<Column title="Akademisches English" dataIndex="basic" key="basic" />
+						<Column title="Kursinformationen" dataIndex="info" key="info" />
+						<Column title="Akademisches Englisch" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>
 				<Col lg={6} />

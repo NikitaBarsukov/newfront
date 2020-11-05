@@ -7,19 +7,19 @@ const { Column } = Table;
 
 const data = [
 	{
-	  info: 'Duration of a course',
-	  basic: '5 months',
+	  info: 'Dauer des Kurses',
+	  basic: '5 Monate',
 	},
 	{
-		info: 'Duration of the lesson',
-		basic: '60 minutes',
+		info: 'Dauer der Unterrichtseinheit',
+		basic: '60 Minuten',
 	  },
 	  {
-		info: 'Eduacational levels',
-		basic: 'Upper Intermediate - Advanced',
+		info: 'Kompetenzniveaus',
+		basic: 'B1 - C1',
 	  },
 	  {
-		info: 'Price for the whole course',
+		info: 'Gesamtpreis des Kurses',
 		basic: '35€',
 	  },
   ];
@@ -80,7 +80,7 @@ const Specific = () => (
 					</li>
 					<li>
 						<p>
-						Banking English: Der englische Wortschatz und die Fähigkeiten für 
+						Banking Englisch: Der englische Wortschatz und die Fähigkeiten für 
 						Bankfachleute müssen sehr fortgeschritten sein. Lassen Sie uns 
 						Ihnen helfen, es richtig zu machen.
 						</p>
@@ -117,7 +117,7 @@ const Specific = () => (
 					</li>
 					<li>
 						<p>
-						Executive Management English: Ein echter Executive English Kurs 
+						Executive Management Englisch: Ein echter Executive Englisch Kurs 
 						in London! Manager benötigen mehr als nur Grundkenntnisse in 
 						Englisch. Sie müssen wissen, wie man auf einer höheren Ebene 
 						überzeugt, leitet, verhandelt und vieles mehr.
@@ -144,7 +144,7 @@ const Specific = () => (
 				<Col lg={6} />
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
-						<Column title="Course information" dataIndex="info" key="info" />
+						<Column title="Kursinformationen" dataIndex="info" key="info" />
 						<Column title="Englisch für spezielle Anlässe" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>

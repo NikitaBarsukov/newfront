@@ -7,19 +7,19 @@ const { Column } = Table;
 
 const data = [
 	{
-	  info: 'Duration of a course',
-	  basic: '5 months',
+	  info: 'Dauer des Kurses',
+	  basic: '5 Monate',
 	},
 	{
-		info: 'Duration of the lesson',
-		basic: '60 minutes',
+		info: 'Dauer der Unterrichtseinheit',
+		basic: '60 Minuten',
 	  },
 	  {
-		info: 'Eduacational levels',
-		basic: 'Upper Intermediate - Advanced',
+		info: 'Kompetenzniveaus',
+		basic: 'B1 - C1',
 	  },
 	  {
-		info: 'Price for the whole course',
+		info: 'Gesamtpreis des Kurses',
 		basic: '35€',
 	  },
   ];
@@ -34,10 +34,10 @@ const Exam = () => (
 			<Breadcrumb.Item>
 				Kurse für Erwachsene
       		</Breadcrumb.Item>
-      		<Breadcrumb.Item>Trinity, Cambridge and Language Certificate Exams</Breadcrumb.Item>
+      		<Breadcrumb.Item>Trinity, Cambridge und Sprachzertifikatsprüfungen</Breadcrumb.Item>
     	</Breadcrumb>
 		<div className="site-layout-background" style={{ padding: 25, minHeight: 30 }}>
-      		<h1 className="center-text">Trinity, Cambridge and Language Certificate Exams</h1>
+      		<h1 className="center-text">Trinity, Cambridge und Sprachzertifikatsprüfungen</h1>
 			<p>
 			Möchten Sie Ihr Ziel erreichen? Wir helfen Ihnen, sich auf die Trinity-Prüfungen 
 			vorzubereiten, damit Sie dies tun können. Die Kurse sind so gestaltet, dass Sie 
@@ -51,15 +51,15 @@ const Exam = () => (
 			Prüfungslehrern unterrichtet, die nachweislich erfolgreich Schüler beim Bestehen 
 			von Prüfungen unterstützen. Diese Kurse sind auf Studenten spezialisiert, 
 			die PET (vorläufige Englischprüfung), die FCE (erstes Zertifikat für Englisch), 
-			die CAE (Cambridge English Advanced Exam) und die CPE 
-			(Cambridge English Proficiency) bestehen möchten.
+			die CAE (Cambridge Englisch C1 Exam) und die CPE 
+			(Cambridge Englisch Proficiency) bestehen möchten.
 			</p>
 			<Row>
 				<Col lg={6} />
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
-						<Column title="Course information" dataIndex="info" key="info" />
-						<Column title="Trinity, Cambridge and Language Certificate Exams" dataIndex="basic" key="basic" />
+						<Column title="Kursinformationen" dataIndex="info" key="info" />
+						<Column title="Trinity, Cambridge und Sprachzertifikatsprüfungen" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>
 				<Col lg={6} />

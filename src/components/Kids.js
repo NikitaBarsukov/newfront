@@ -3,23 +3,23 @@ import './styles/info.css'
 import { Breadcrumb,Table, Row, Col } from 'antd'
 import { NavLink } from 'react-router-dom'
 
-const { Column, ColumnGroup } = Table;
+const { Column } = Table;
 
 const data = [
 	{
-	  info: 'Duration of a course',
-	  basic: '5 months',
+	  info: 'Dauer des Kurses',
+	  basic: '5 Monate',
 	},
 	{
-		info: 'Duration of the lesson',
-		basic: '25 minutes',
+		info: 'Dauer der Unterrichtseinheit',
+		basic: '25 Minuten',
 	  },
 	  {
-		info: 'Eduacational levels',
-		basic: 'Basic - Intermediate',
+		info: 'Kompetenzniveaus',
+		basic: 'A1 - B1',
 	  },
 	  {
-		info: 'Price for the whole course',
+		info: 'Gesamtpreis des Kurses',
 		basic: '15€',
 	  },
   ];
@@ -32,7 +32,7 @@ const Kids = () => (
         		<NavLink to="/" className="nav-text">Startseite</NavLink>
       		</Breadcrumb.Item>
 			<Breadcrumb.Item>
-        		Junior courses
+        		Kurse für Kinder
       		</Breadcrumb.Item>
       		<Breadcrumb.Item>Junior von 4 bis 9</Breadcrumb.Item>
     	</Breadcrumb>
@@ -64,7 +64,7 @@ const Kids = () => (
 				<Col lg={6} />
 				<Col lg={12}>
 					<Table dataSource={data} bordered>
-						<Column title="Course information" dataIndex="info" key="info" />
+						<Column title="Kursinformationen" dataIndex="info" key="info" />
 						<Column title="Junior von 4 bis 9" dataIndex="basic" key="basic" />
 					</Table>
 				</Col>
