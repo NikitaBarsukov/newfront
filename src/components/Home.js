@@ -37,17 +37,17 @@ const Home = () => (
         </div>
 
       </Carousel>
-      <div className="center-text" style={{margin : 50}}>
+      <div className="center-text">
         <h1>Global Horizons gibt dir die Möglichkeit Englisch online zu lernen.</h1>
       </div>
       <Divider />
       <Row align="top">
-        <Col span={12}>
+        <Col flex ={2}>
           <div className="image">
             <img src={pic7} alt="pic7"/>
           </div>
         </Col>
-        <Col span={12} >
+        <Col flex ={3}>
           <h2 className="center-text" style={{margin :20}}>
             Welchen Lehransatz verfolgen wir in unserer Schule?
           </h2>
